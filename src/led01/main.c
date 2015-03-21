@@ -44,17 +44,15 @@ int main(void)
 	/* main program loop */
 	for (;;) {
 		/* set led on */
-		GPIO_SetPins(GPIOC, GPIO_P13);
+		//GPIO_SetPins(GPIOC, GPIO_P13);
 		/* delay */
-		simple_delay(10000000);
+		//simple_delay(10000000);
 		/* clear led */
-		GPIO_ClearPins(GPIOC, GPIO_P13);
+		//GPIO_ClearPins(GPIOC, GPIO_P13);
 		/* delay */
-		simple_delay(10000000);
+		//simple_delay(10000000);
 	}
 
 	/* never reached */
 	return 0;
 }
-
-
