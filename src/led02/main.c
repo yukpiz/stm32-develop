@@ -83,10 +83,12 @@ int main(void)
         if(GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0)){
             //ボタンが押されて１になっていたら以下を実行
             //GPIO_SetBits(GPIOD,GPIO_Pin_13); //LED点灯
-            GPIO_SetBits(GPIOD,GPIO_Pin_14);
+            //GPIO_SetBits(GPIOD,GPIO_Pin_14);
+            GPIO_SetBits(GPIOD,GPIO_Pin_12);
             myDelay();
             //GPIO_ResetBits(GPIOD,GPIO_Pin_13); //LED消灯
-            GPIO_ResetBits(GPIOD,GPIO_Pin_14); //LED消灯
+            //GPIO_ResetBits(GPIOD,GPIO_Pin_14); //LED消灯
+            GPIO_ResetBits(GPIOD,GPIO_Pin_12); //LED消灯
             myDelay();
         }
     }
